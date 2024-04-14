@@ -38,7 +38,7 @@ export default function Status() {
       <div className="w-[100%] h-[95vh] flex justify-center items-center">
         {status === 'success' && <Result
           status="success"
-          title="Your issue resolve successfully "
+          title="Your issue resolved successfully "
           // subTitle="Order number: 2017182818828182881 Cloud server configuration takes 1-5 minutes, please wait."
           extra={[
             <Button type="primary" key="console" onClick={() => navigate('/')} style={{ background: '#000', width: "100%" }}>
