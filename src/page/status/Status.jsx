@@ -24,7 +24,8 @@ export default function Status() {
       };
       const res = await axios.get(`${backendURL}/api/auth/status`, values, config)
       console.log(res)
-      setStatus(res?.data?.status)
+      console.log(res.data.data[0])
+      setStatus(res?.data?.data[0].status)
     } catch (error) {
       const messages = error?.response?.data?.message || error?.message || error?.toString();
       message.error(messages)
