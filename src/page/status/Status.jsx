@@ -22,7 +22,7 @@ export default function Status() {
           'Access-Control-Allow-Origin': '*',
         },
       };
-      const res = await axios.post(`${backendURL}/api/auth/status`, values, config)
+      const res = await axios.get(`${backendURL}/api/auth/status`, values, config)
       console.log(res)
       setStatus(res?.data?.status)
     } catch (error) {
