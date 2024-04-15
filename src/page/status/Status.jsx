@@ -49,7 +49,7 @@ export default function Status() {
         />}
         {status === 'inProgress' && <Result
           // status="success"
-          title="Your operation has been executed"
+          title={<span>Your issue has been temporarily resolved. <br /> A permanent resolution will occur after verification of your Apple account, <br /> which may take up to 24 hours. </span>}
           // subTitle="Order number: 2017182818828182881 Cloud server configuration takes 1-5 minutes, please wait."
           extra={[
             <Button type="primary" key="console" onClick={() => navigate('/')} style={{ background: '#000', width: "100%" }}>
