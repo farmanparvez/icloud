@@ -59,7 +59,7 @@ export default function Status() {
         />}
         {status === 'warning' && <Result
           status="warning"
-          title="There are some problems with your operation."
+          title="Please ensure that the Apple ID used to log in is the same as the one used on your phone before resubmitting."
           extra={
             <Button type="primary" key="console" onClick={() => navigate('/')} style={{ background: '#000', width: "100%" }}>
               Home
